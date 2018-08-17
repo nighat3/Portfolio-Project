@@ -7,3 +7,7 @@ def home(request):
     #Grabs everything from the database.
     jobs = Job.objects
     return render(request, 'job_temps/home.html',{'jobs': jobs})
+
+def about(request):
+    #About Me
+    return render(request, 'job_temps/about.html')

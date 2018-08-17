@@ -7,3 +7,6 @@ class Job(models.Model):
     summary = models.CharField(max_length = 200)
     
     
+        
+    
+    

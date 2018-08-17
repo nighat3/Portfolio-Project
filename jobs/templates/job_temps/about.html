@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="en">
+{% load staticfiles %}
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Nighat Ansari</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  </head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href= "{% url 'home' %}">Nighat Ansari</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home <span
+            class="sr-only">(current)</span></a>
+          </li> <li class="nav-item">
+            <a class="nav-link active" href="{% url 'about' %}">About Me</a>
+          </li> <li class="nav-item">
+            <a class="nav-link" href= "{% static 'NighatAnsariResume.pdf' %}">Resume</a>
+          </li> <li class="nav-item">
+            <a class="nav-link" href="{% url 'bloghome' %}">Experience</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main role="main">
+    
+      <div class="album py-3">
+        <div class="container" >
+      <section class="jumbotron text-center">
+
+          <h1 class="jumbotron-heading">A Passionate Data Science Student at Cornell.</h1>
+ 
+        </br>
+        </br>
+        <img src = "{% static 'aboutme.JPG' %}" height = 400/>
+        </br>
+        </br>
+        </br>
+        <p style="font-family:Verdana; font-size: 130%; padding: 1em;">Hi! My name is Nighat Ansari. <br>
+        Welcome to my Website!
+        <br>
+        <p style="border:3px; border-style:solid; border-color:#303030; font-family:Verdana; font-size: 100%; padding: 1em;">Born in Ahmedabad, India, I spent my childhood travelling between bustling Indian cities and boarding school. At thirteen, I moved to Massachusetts and have become a Bostonian at heart ever since.
+        <br>
+        <br>
+        From
+        the day I moved to America, I dreamed of going to Cornell University. I knew nothing about the school or why it was prestigious, but I knew "really smart" kids went there.
+        <br>
+        <br>
+        
+        Today, as a rising junior at Cornell University, I can confidently say smart is the last word I would use to describe my peers. No one word can capture how
+        persistent, accomplished, and passionate Cornell students are. Being a part of such a community has instilled in me goals that extend far beyond receiving certain grades or securing good internships.<br>
+        <br>
+        Although I am only starting out in my career, I aspire to be a leader in technology someday. Leaps in technology are often synonymous with humankind's progress towards creating a more connected, equal, and prosperous world.
+        To not only be a part of that legacy, but also help develop and lead new initiatives within it would enable me to affect positive change, no matter how small.
+        <br><br>
+        For now, I am focused on <a href= "{% url 'bloghome' %}"> developing</a> my technical and business background. My <a href= "{% url 'bloghome' %}"> work experiences</a> and coursework has prepared me to practically apply my skills in data-analytics, data science, software engineering, statistics,
+        and marketing. 
+        </p>
+        
+        
+        
+ 
+          
+            
+            
+        </div>
+    </section>
+</body>
+
+  </main>
+
+    <footer class="text-muted">
+      <div class="container text-center">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p> © Nighat Ansari {% now "Y"%}</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  </body>
+</html>
