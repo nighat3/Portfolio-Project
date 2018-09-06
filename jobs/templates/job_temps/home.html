@@ -44,7 +44,13 @@
   </header>
 
   <main role="main">
+      
     <section class="jumbotron text-center">
+      <style>
+   body {
+    background-color: #2AABC5;
+    }
+</style>
         <div class="container">
           <h1 class="jumbotron-heading">Hi, I'm Nighat.</h1>
           <p class="lead text-muted">I'm a junior at Cornell University passionate about Data Science and programming!</p>
@@ -52,7 +58,7 @@
             <a href="mailto:na295@cornell.edu" class="btn btn-primary my-2">Contact Me</a>
             <a href="{% static 'NighatAnsariResume2.pdf' %}" class="btn btn-primary my-2">My Resume</a>
           </p>
-          <img style="border:2px solid black;" src = "{% static 'headshot.jpg' %}" height = 400/>
+          <img src = "{% static 'headshot.jpg' %}" height = 400/>
           </br>
           </br>
         <a href="{% url 'about' %}" class="btn btn-primary my-2"> About Me</a>

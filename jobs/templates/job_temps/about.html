@@ -17,7 +17,7 @@
 
   </head>
 
-<body>
+
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,7 +34,7 @@
           </li> <li class="nav-item">
             <a class="nav-link active" href="{% url 'about' %}">About Me</a>
           </li> <li class="nav-item">
-            <a class="nav-link" href= "{% static 'NighatAnsariResume.pdf' %}">Resume</a>
+            <a class="nav-link" href= "{% static 'NighatAnsariResume2.pdf' %}">Resume</a>
           </li> <li class="nav-item">
             <a class="nav-link" href="{% url 'bloghome' %}">Experience</a>
           </li>
@@ -44,7 +44,12 @@
   </header>
   
   <main role="main">
+       <style>
+   body {
+    background-color: #42ABCB;
+    }
     
+</style>
       <div class="album py-3">
         <div class="container" >
       <section class="jumbotron text-center">
@@ -57,24 +62,27 @@
         </br>
         </br>
         </br>
+        
+        
         <p style="font-family:Verdana; font-size: 130%; padding: 1em;">Hi! My name is Nighat Ansari. <br>
         Welcome to my Website!
         <br>
-        <p style="border:3px; border-style:solid; border-color:#303030; font-family:Verdana; font-size: 100%; padding: 1em;">Born in Ahmedabad, India, I spent my childhood travelling between bustling Indian cities and boarding school. At thirteen, I moved to Massachusetts and have become a Bostonian at heart ever since.
+        <p style="border:3px; border-style:solid; border-color:#303030; font-family:Verdana; font-size: 100%; padding: 1em;">Born in Ahmedabad, India, I spent my
+        childhood travelling between bustling Indian cities and boarding school. At thirteen, I moved to Massachusetts and have since become a Bostonian at heart.
         <br>
         <br>
         From
-        the day I moved to America, I dreamed of going to Cornell University. I knew nothing about the school or why it was prestigious, but I knew "really smart" kids went there.
+        the day I moved to America, I dreamed of going to Cornell University. I knew nothing about Cornell or why it was prestigious, but knew only that "really smart" kids went there.
         <br>
         <br>
         
-        Today, as a rising junior at Cornell University, I can confidently say smart is the last word I would use to describe my peers. No one word can capture how
+        Today, as a rising junior at Cornell University, smart is the last word I would use to describe my peers. No one word can capture how
         persistent, accomplished, and passionate Cornell students are. Being a part of such a community has instilled in me goals that extend far beyond receiving certain grades or securing good internships.<br>
         <br>
         Although I am only starting out in my career, I aspire to be a leader in technology someday. Leaps in technology are often synonymous with humankind's progress towards creating a more connected, equal, and prosperous world.
         To not only be a part of that legacy, but also help develop and lead new initiatives within it would enable me to affect positive change, no matter how small.
         <br><br>
-        For now, I am focused on <a href= "{% url 'bloghome' %}"> developing</a> my technical and business background. My <a href= "{% url 'bloghome' %}"> work experiences</a> and coursework has prepared me to practically apply my skills in data-analytics, data science, software engineering, statistics,
+        For now, I am focused on <a href= "{% url 'bloghome' %}"> developing</a> my technical and business background. My <a href= "{% url 'bloghome' %}"> work experiences</a> and coursework help me practically apply my skills in data-analytics, data science, software engineering, statistics,
         and marketing. 
         </p>
         
@@ -83,9 +91,10 @@
  
           
             
-            
-        </div>
-    </section>
+     </div>
+            </section>       
+        
+
 </body>
 
   </main>
